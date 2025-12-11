@@ -1,0 +1,2 @@
+{"rule":"WHITESPACE_RULE","sentence":"^\\Q[] Spin transport of Inhomogeneous Interaction spin chain  [DingZu Wang (BUAA)]DingZu Wang [] School of Physics, Beihang University 666@buaa.edu.cn today=old []\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Q[] Spin transport of Inhomogeneous Interaction spin chain  [DingZu Wang (BUAA)]DingZu Wang [] School of Physics, Beihang University 666@buaa.edu.cn today=old []2023.11.10\\E$"}

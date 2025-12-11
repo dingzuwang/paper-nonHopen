@@ -1,0 +1,167 @@
+{
+    "files.autoSave": "afterDelay",
+    
+    // 'Cascadia Code Light', 'Sarasa Gothic SC Light', Consolas, 'Courier New', monospace
+        "workbench.colorTheme": "Default Dark Modern",
+    
+        // LaTeX
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex*2",
+            "tools": [
+                "xelatex",
+                "xelatex"
+            ],
+        },
+        {
+            "name": "pdf->bib->pdf->pdf",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "editor.wordWrap": "on",
+    "[latex]": {
+        
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
+    "latex-utilities.liveReformat.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "latex-workshop.hover.preview.mathjax.extensions": [
+        "physics",
+        "cases",
+        "mathtools",
+        "amscd",
+        "upgreek",
+        "unicode",
+        "cancel"
+    ],
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "%DOCFILE%.bbl",
+        "%DOCFILE%.blg",
+        "%DOCFILE%.idx",
+        "%DOCFILE%.ind",
+        "%DOCFILE%.lof",
+        "%DOCFILE%.lot",
+        "%DOCFILE%.out",
+        "%DOCFILE%.toc",
+        "%DOCFILE%.acn",
+        "%DOCFILE%.acr",
+        "%DOCFILE%.alg",
+        "%DOCFILE%.glg",
+        "%DOCFILE%.glo",
+        "%DOCFILE%.gls",
+        "%DOCFILE%.fls",
+        "%DOCFILE%.log",
+        "%DOCFILE%.fdb_latexmk",
+        "%DOCFILE%.snm",
+        "%DOCFILE%.synctex(busy)",
+        "%DOCFILE%.synctex.gz(busy)",
+        "%DOCFILE%.nav",
+        "%DOCFILE%.vrb"
+    ],
+    "latex-workshop.latex.watch.files.ignore": [
+        "**/*.bbx",
+        "**/*.bbl",
+        "**/*.cbx",
+        "**/*.cfg",
+        "**/*.clo",
+        "**/*.cnf",
+        "**/*.def",
+        "**/*.dfu",
+        "**/*.enc",
+        "**/*.fd",
+        "**/*.fmt",
+        "**/*.lbx",
+        "**/*.map",
+        "**/*.mkii",
+        "**/*.pfb",
+        "**/*.tfm",
+        "**/*.vf",
+        "**/*.code.tex",
+        "**/*.sty",
+        "**/texmf-{dist,var}/**",
+        "**/Local/MiKTeX/**",
+        "**/Local/Programs/MiKTeX/**",
+        "**/Roaming/MiKTeX/**",
+        "**/Program*/MiKTeX*/**",
+        "**/.miktex/texmfs/**",
+        "/var/cache/miktex-texmf/**",
+        "/usr/local/share/miktex-texmf/**",
+        "**/Library/Application Support/MiKTeX/texmfs/**",
+        "/dev/null",
+        "*.bbl"
+    ],
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.nav": true,
+        "**/*.snm": true,
+        "**/*.toc": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.log": true,
+        "**/*.out": true,
+        "**/*.synctex.gz": true
+    },
+    // "editor.fontFamily": "'Cascadia Code Light', 'Sarasa Gothic SC Light', Consolas, 'Courier New', monospace",
+    "git.enabled": true
+    }
